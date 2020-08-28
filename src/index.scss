@@ -1,0 +1,131 @@
+@import './colors.scss';
+
+.nav_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    ul{
+        list-style: none;
+        background-color: $dark;
+        height: 100vh;
+        width: 420px;
+        padding:24px 0px;
+        font-size: large;
+        padding:30px;
+        font-size: large;
+        clip-path: circle(10% at 15% 10%);
+        transition: all 1s ease-in-out;
+        z-index: -1;
+        
+        
+    &:hover{
+            clip-path: circle(100% at -45% 10%);
+        }
+
+        .menu_icon{
+            cursor: pointer;
+            position: relative;
+            height: 48px;
+            width: 48px;
+            margin:  14px 24px;
+           
+            
+            span{
+                    background-color: $dark;
+                    position: absolute;
+                    left: 0;
+                    width: 48px;
+                    padding: 2px;
+                    background-color: aliceblue;
+                }
+            @for $i from 1 to 4 {
+                span:nth-child(#{$i}){
+                    top: percentage(23 * ($i - 1) / 100);
+                     width: percentage(25 * $i / 100);
+
+                }
+            }
+        
+        }
+        .nav-items{
+            font-weight: bold;
+            padding: 10px 0px;
+            color: $white;
+            margin: 25px 0px;
+            font-weight: bold;
+
+            img{
+                margin-right: 12px;
+                margin-bottom: -2px;
+            }
+        }
+    }
+    
+}
+.height-50{
+    height: 49vh;
+}
+
+.button{
+    font-size: 18px;
+    border: 1px solid black;
+    width: 120px;
+    cursor: pointer;
+    padding: 3px 2px;
+    transition: all .5s ease-in-out;
+}
+
+.dark_btn{
+    background-color: $dark;
+    color:$white;
+    
+    &:hover{
+        background-color: transparent;
+        color: $dark;
+        border-radius: 20px;
+    }
+}
+.light_btn{
+    background-color: transparent;
+    color: $dark;
+
+    &:hover{
+        background-color: $dark;
+        color: $white;
+        border-radius: 20px;
+    }
+}
+///////////-----------------------L A N D I N G . J S--------------------////////////
+///////////-----------------------L A N D I N G . J S--------------------////////////
+///////////-----------------------L A N D I N G . J S--------------------////////////
+
+
+.title{
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-size: 32px;
+    color: $dark;
+    
+
+
+    span{
+        color: $darkblue;
+    }
+
+    .moto{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;;
+        font-weight: 300;
+        margin-top: 20%;
+    }
+}
+
+.model{
+    height:400px;
+    width: 550px;
+}
+
+    
+
