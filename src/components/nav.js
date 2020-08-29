@@ -4,6 +4,7 @@ import home from '../assets/icons/home.svg'
 import about from '../assets/icons/about.svg'
 import portfolio from '../assets/icons/portfolio.svg'
 import contact from '../assets/icons/contact.svg'
+import { Link } from 'react-router-dom';
 const Nav = () => {
     return ( 
         <React.Fragment>
@@ -15,10 +16,12 @@ const Nav = () => {
                         <span></span>
                         <span></span>
                     </div>
-                    <li className="nav-items"><img src={home} alt=""/>Home</li>
-                    <li className="nav-items"><img src={about} alt=""/>About</li>
-                    <li className="nav-items"><img src={portfolio} alt=""/>Portfolio</li>
-                    <li className="nav-items"><img src={contact} alt=""/>Contact</li>
+                    
+                    <li className="nav-items"><Link to="/" style={{"textDecoration":"none","color":"inherit"}}><img src={home} alt=""/>Home</Link></li>
+                    <li className="nav-items"><Link to="/about" style={{"textDecoration":"none","color":"inherit"}}><img src={about} alt=""/>About</Link></li>
+                    <li className="nav-items"><Link to="/portfolio" style={{"textDecoration":"none","color":"inherit"}}><img src={portfolio} alt=""/>Portfolio</Link></li>
+                    <li className="nav-items"><Link to="/contact" style={{"textDecoration":"none","color":"inherit"}}><img src={contact} alt=""/>Contact</Link></li>
+                   
                 </ul>
             </div>
 
