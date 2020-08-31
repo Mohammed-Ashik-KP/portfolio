@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1aa7701407193d57b2644df6e4c6435",
+    "revision": "3a8bbd105fa372b7fe8c2f63b32011c8",
     "url": "/Aashiq-Otp.github.io/index.html"
   },
   {
-    "revision": "1b6fd518d928328318c3",
+    "revision": "5671dc5a7e5ebd50c9ff",
     "url": "/Aashiq-Otp.github.io/static/css/2.ff484ca2.chunk.css"
   },
   {
-    "revision": "21b234df2fe3d850f732",
-    "url": "/Aashiq-Otp.github.io/static/css/main.59a280ac.chunk.css"
+    "revision": "8d197008d5e75cfdfd97",
+    "url": "/Aashiq-Otp.github.io/static/css/main.aaddcf5a.chunk.css"
   },
   {
-    "revision": "1b6fd518d928328318c3",
-    "url": "/Aashiq-Otp.github.io/static/js/2.c7ff8dff.chunk.js"
+    "revision": "5671dc5a7e5ebd50c9ff",
+    "url": "/Aashiq-Otp.github.io/static/js/2.3cfc4eb9.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Aashiq-Otp.github.io/static/js/2.c7ff8dff.chunk.js.LICENSE.txt"
+    "url": "/Aashiq-Otp.github.io/static/js/2.3cfc4eb9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "21b234df2fe3d850f732",
-    "url": "/Aashiq-Otp.github.io/static/js/main.b0265cae.chunk.js"
+    "revision": "8d197008d5e75cfdfd97",
+    "url": "/Aashiq-Otp.github.io/static/js/main.bd1fc5ee.chunk.js"
   },
   {
     "revision": "d8c7d9933d4913ffe836",
     "url": "/Aashiq-Otp.github.io/static/js/runtime-main.9a55e86a.js"
+  },
+  {
+    "revision": "dfba0e270ec940003ee9e8b0420d6fea",
+    "url": "/Aashiq-Otp.github.io/static/media/BCA.dfba0e27.jpg"
   },
   {
     "revision": "beb9baa2e8e933216309c85e6961e99d",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "675e21e33ef96a7da2ebdc9a332ba24a",
     "url": "/Aashiq-Otp.github.io/static/media/ashiq-high.675e21e3.png"
+  },
+  {
+    "revision": "2c270c2c1cf2b8004a20122a265564ca",
+    "url": "/Aashiq-Otp.github.io/static/media/automation.2c270c2c.jpg"
   },
   {
     "revision": "c9680053b4913b34238f8ceadfff4c0f",
