@@ -97,7 +97,7 @@
 }
 
 .light_btn {
-  background-color: transparent;
+  background-color: #F2EEF7;
   color: #032b43;
 }
 
@@ -154,6 +154,17 @@
   font-size: 18px;
 }
 
+.have-circles {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  height: 180px;
+  width: 190px;
+  background-color: #EECAC9;
+  border-radius: 42% 58% 57% 43% / 46% 46% 54% 54%;
+  opacity: .5;
+}
+
 .content-title {
   color: #FF2768;
   font-weight: bolder;
@@ -167,7 +178,7 @@
   position: relative;
   text-transform: capitalize;
   color: #032b43;
-  font-family: cursive;
+  font-family: poppy;
   padding: 15px;
 }
 
@@ -220,37 +231,59 @@
   width: 80px;
 }
 
-.skillset {
+.box {
   position: relative;
-  padding: 12px;
-  margin: 3px 12px;
-  width: 50%;
-  left: 25%;
-  background-color: salmon;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 240px;
+  height: 320px;
+  border: 1px solid #032b43;
+  background-color: #032b43;
+  border-top-left-radius: 40px;
+  padding: 10px;
+  -webkit-box-shadow: 8px 20px 15px #5a5858;
+          box-shadow: 8px 20px 15px #5a5858;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.skillset::before {
-  position: absolute;
-  content: '';
-  top: 10%;
-  left: 0;
-  height: 120px;
+.box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
-.skillset .skill {
-  margin: 0px 32px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.box .box-image {
+  height: 130;
+  padding: 4px;
+  background-color: #F2EEF7;
+}
+
+.box .box-image img {
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.box .box-body {
+  opacity: .7;
+}
+
+.box .heading {
+  font-size: larger;
+  font-weight: bold;
+  color: #FFBA08;
+  padding: 3px 0px;
+}
+
+.box .heading p {
+  font-size: medium;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #F2EEF7;
+  margin-top: 15px;
   text-align: center;
-}
-
-.skillset .skill .skillimg {
-  height: 120px;
-  width: 100px;
+  padding: 0px 5px;
 }
 /*# sourceMappingURL=index.css.map */

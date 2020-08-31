@@ -88,7 +88,7 @@
     }
 }
 .light_btn{
-    background-color: transparent;
+    background-color: $secondwhite;
     color: $dark;
 
     &:hover{
@@ -153,6 +153,20 @@
 ///////--------------A B O U T . J S ----------------/////////////
 ///////--------------A B O U T . J S ----------------/////////////
 
+.have-circles{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    height: 180px;
+    width: 190px;
+    background-color: $rose;
+    border-radius:42% 58% 57% 43% / 46% 46% 54% 54% ;
+    opacity: .5;
+    
+}
+
+
+
 .content-title{
     color:$red;
     font-weight: bolder;
@@ -162,12 +176,14 @@
     
 }
 
+
+
 .about{
     line-height: 28px;
     position: relative;
     text-transform: capitalize;
     color: $dark;
-    font-family: cursive ;
+    font-family: poppy ;
     padding: 15px;
 
     &::after{
@@ -220,38 +236,57 @@
 
 }
 
-/////------- S K I L L S E T . J S -----------////////
-/////------- S K I L L S E T . J S -----------////////
-/////------- S K I L L S E T . J S -----------////////
-
-.skillset{
+/////------- P R O J E C T . J S -----------////////
+/////------- P R O J E C T . J S -----------////////
+/////------- P R O J E C T . J S -----------////////
+.box{
     position: relative;
-    padding: 12px;
-    margin: 3px 12px;
-    width: 50%;
-    left: 25%;
-    background-color: salmon;
-
-
-    &::before{
-        position: absolute;
-        content: '';
-        top: 10%;
-        left: 0;
-        height: 120px;
-
+    box-sizing: border-box;
+    width: 240px ;
+    height: 320px;
+    border: 1px solid $dark;
+    background-color: $dark;
+    border-top-left-radius: 40px;
+    padding: 10px;
+    box-shadow: 8px 20px 15px #5a5858;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+   
+    &:hover{
+        transform: scale(1.05);
     }
+    
 
-    .skill{
-        margin: 0px 32px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        text-align: center;
 
-        .skillimg{
-            height: 120px;
-            width: 100px;
+    .box-image{
+            height: 130;
+            padding: 4px;
+            background-color: $secondwhite;
+     img{
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    }   
+    .box-body{
+        opacity: .7;
+    }
+    .heading{
+        font-size: larger;
+        font-weight: bold;
+        color: $yellow;
+        padding: 3px 0px;
+
+
+        p{
+            font-size: medium;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: $secondwhite;
+            margin-top: 15px;
+            text-align: center;
+            padding: 0px 5px;
         }
     }
+  
 }
+

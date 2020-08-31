@@ -3,15 +3,16 @@ import SkillSet from './skillset';
 const About = () => {
     return ( 
         <React.Fragment>
-            <div className="container-fluid  height-50">
+            <div className="container-fluid height-50">
+               
                 <div className="row d-flex justify-content-start mt-4">
                     <div className="col offset-3">
                         <div className="content-title">
-                            Who Am !
+                            About Me
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row mt-3 ">
                     <div className="col-6 offset-4 text-left"> 
                         <div className="about">
                             <div className="blah">

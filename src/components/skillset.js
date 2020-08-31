@@ -27,6 +27,41 @@ const SkillSet = () => {
         slide:'img',
         centerMode:true,
         initialSlide:5,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                slidesPerRow:3,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                slidesPerRow:2,
+                
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                slidesPerRow:1,
+              }
+            },
+              {
+                breakpoint: 360,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  slidesPerRow:1,
+                }
+            }
+          ]
         
     }
     return ( 
@@ -38,21 +73,21 @@ const SkillSet = () => {
                     </div>
                 </div>
 
-                <div className="">
+                <div className="skills">
                    
                    <Slider {...settings}>
                    
-                        <img src={html} alt="html css js" height="60px"/>
-                        <img src={css} alt="html css js" height="50px"/>
-                        <img src={js} alt="html css js" height="60px"/>
-                        <img src={react} alt="html css js" height="60px"/>
-                        <img src={node} alt="html css js" height="60px"/>
-                        <img src={express} alt="html css js" height="60px"/>
-                        <img src={git} alt="html css js" height="60px"/>
-                        <img src={python} alt="html css js" height="60px"/>
-                        <img src={sass} alt="html css js" height="60px"/>
-                        <img src={mysql} alt="html css js" height="60px"/>
-                        <img src={mongo} alt="html css js" height="60px"/>
+                        <img src={html} alt="HTML" height="60px"/>
+                        <img src={css} alt="CSS" height="50px"/>
+                        <img src={js} alt="Javascript" height="60px"/>
+                        <img src={react} alt="React JS" height="60px"/>
+                        <img src={node} alt="Node JS" height="60px"/>
+                        <img src={express} alt="Express JS" height="60px"/>
+                        <img src={git} alt="GitHub" height="60px"/>
+                        <img src={python} alt="Python" height="60px"/>
+                        <img src={sass} alt="Sass" height="60px"/>
+                        <img src={mysql} alt="MySQL" height="60px"/>
+                        <img src={mongo} alt="MongoDB" height="60px"/>
                        
                         
 
