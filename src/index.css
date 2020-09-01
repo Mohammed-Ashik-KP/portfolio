@@ -107,6 +107,10 @@
   border-radius: 20px;
 }
 
+.margin30 {
+  margin: 30px 0px;
+}
+
 .title {
   font-weight: bolder;
   letter-spacing: 4px;
@@ -255,6 +259,10 @@
           transform: scale(1.05);
 }
 
+.box:hover .box-body {
+  opacity: 1;
+}
+
 .box .box-image {
   height: 130;
   padding: 4px;
@@ -285,5 +293,42 @@
   margin-top: 15px;
   text-align: center;
   padding: 0px 5px;
+}
+
+.contact-box {
+  position: relative;
+  width: 660px;
+  background-color: #ffff;
+  height: 370px;
+  border: 1px solid #ffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 15px 8px #5a5858;
+          box-shadow: 10px 15px 8px #5a5858;
+  padding: 26px;
+}
+
+.contact-box .contact-details {
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+
+.contact-box .contact-data {
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-box .contact-button {
+  position: absolute;
+  bottom: 5%;
+  left: 80%;
+}
+
+.contact-box textarea {
+  resize: none;
 }
 /*# sourceMappingURL=index.css.map */

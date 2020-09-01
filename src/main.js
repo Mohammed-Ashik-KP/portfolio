@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import { Route, BrowserRouter ,Switch } from 'react-router-dom';
 import About from './components/about';
 import Portfolio from './components/portfolio';
+import Contact from './components/contact';
 const Main = () => {
     return ( 
         <React.Fragment>
@@ -18,6 +19,7 @@ const Main = () => {
                           <Route path="/" exact component={Landing}></Route>
                           <Route path="/about" exact component={About}></Route>
                           <Route path="/portfolio" exact component={Portfolio}></Route>
+                          <Route path="/contact" exact component={Contact}></Route>
                       </Switch>
                 </BrowserRouter>
               
