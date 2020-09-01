@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a8bbd105fa372b7fe8c2f63b32011c8",
+    "revision": "5797e31caa5b9227a34a4661898c5eaf",
     "url": "/Aashiq-Otp.github.io/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Aashiq-Otp.github.io/static/css/2.ff484ca2.chunk.css"
   },
   {
-    "revision": "8d197008d5e75cfdfd97",
-    "url": "/Aashiq-Otp.github.io/static/css/main.aaddcf5a.chunk.css"
+    "revision": "41106c3af113242a715b",
+    "url": "/Aashiq-Otp.github.io/static/css/main.6623ae7b.chunk.css"
   },
   {
     "revision": "5671dc5a7e5ebd50c9ff",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Aashiq-Otp.github.io/static/js/2.3cfc4eb9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8d197008d5e75cfdfd97",
-    "url": "/Aashiq-Otp.github.io/static/js/main.bd1fc5ee.chunk.js"
+    "revision": "41106c3af113242a715b",
+    "url": "/Aashiq-Otp.github.io/static/js/main.ff347750.chunk.js"
   },
   {
     "revision": "d8c7d9933d4913ffe836",
