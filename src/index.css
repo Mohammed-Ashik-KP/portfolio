@@ -25,7 +25,6 @@
   .nav_menu ul {
     -webkit-clip-path: circle(8% at 14% 9%);
             clip-path: circle(8% at 14% 9%);
-    background-color: #76B947;
   }
 }
 
@@ -33,6 +32,14 @@
   .nav_menu ul {
     -webkit-clip-path: circle(7% at 12% 8%);
             clip-path: circle(7% at 12% 8%);
+  }
+}
+
+@media (max-width: 576px) {
+  .nav_menu ul {
+    -webkit-clip-path: circle(6% at 12% 8%);
+            clip-path: circle(6% at 12% 8%);
+    background-color: #333333;
   }
 }
 
@@ -83,6 +90,10 @@
   }
 }
 
+.nav_menu ul .nav-group {
+  margin-top: 60px;
+}
+
 .nav_menu ul .menu_icon {
   cursor: pointer;
   position: relative;
@@ -109,6 +120,12 @@
 @media (max-width: 999px) {
   .nav_menu ul .menu_icon span {
     padding: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav_menu ul .menu_icon span {
+    margin: 14px 0px;
   }
 }
 

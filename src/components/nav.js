@@ -16,12 +16,12 @@ const Nav = () => {
                         <span></span>
                         <span></span>
                     </div>
-                    
+                    <div className="nav-group">
                     <li className="nav-items"><Link to="/" style={{"textDecoration":"none","color":"inherit"}}><img src={home} alt=""/>Home</Link></li>
                     <li className="nav-items"><Link to="/about" style={{"textDecoration":"none","color":"inherit"}}><img src={about} alt=""/>About</Link></li>
                     <li className="nav-items"><Link to="/portfolio" style={{"textDecoration":"none","color":"inherit"}}><img src={portfolio} alt=""/>Portfolio</Link></li>
                     <li className="nav-items"><Link to="/contact" style={{"textDecoration":"none","color":"inherit"}}><img src={contact} alt=""/>Contact</Link></li>
-                   
+                   </div>
                 </ul>
             </div>
 

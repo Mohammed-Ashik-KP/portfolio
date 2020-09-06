@@ -51,10 +51,16 @@
 
         @include md-desktop{
             clip-path: circle(8% at 14% 9%);
-            background-color: $green;
+            
         }
         @include xl-mob(){
             clip-path: circle(7% at 12% 8%);
+        }
+
+        @include md-mob(){
+            clip-path: circle(6% at 12% 8%);
+            background-color: #333333;
+           
         }
   
     &:hover{
@@ -79,7 +85,9 @@
                 clip-path: circle( 100% at -65% 2%);
             }
         }
-
+        .nav-group{
+            margin-top: 60px;
+        }
         .menu_icon{
             cursor: pointer;
             position: relative;
@@ -90,6 +98,7 @@
             @include md-tab(){
                 margin: 0px;
             }
+         
             
             span{
                     background-color: $dark;
@@ -103,6 +112,9 @@
                        padding: 2px;
                        
                      }
+                     @include md-mob(){
+                        margin: 14px 0px;
+                    }
 
                 }
             @for $i from 1 to 4 {
