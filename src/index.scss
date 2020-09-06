@@ -1,10 +1,40 @@
 @import './colors.scss';
 
+//------------MEDIA QUERIES-----------------------///
+
+@mixin md-desktop {
+    @media (max-width: 999px) { @content; }
+  }
+  @mixin md-tab {
+    @media (max-width: 900px) { @content; }
+  }
+  @mixin sm-tab {
+    @media (max-width: 780px) { @content; }
+  }
+  @mixin xl-mob {
+      @media (max-width : 725px) {@content; }
+  }
+  @mixin cs-708 {
+    @media (max-width : 708px) {@content; }
+}
+@mixin lg-mob {
+    @media (max-width : 620px) {@content; }
+}
+@mixin md-mob {
+    @media (max-width : 576px) {@content; }
+}
+@mixin sm-mob {
+    @media (max-width : 376px) {@content; }
+}
+
+
+
+//------------MEDIA QUERIES-----------------------///
 .nav_menu{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 20;
+    z-index: 1000;
 
     ul{
         list-style: none;
@@ -15,13 +45,39 @@
         font-size: large;
         padding:30px;
         font-size: large;
-        clip-path: circle(10% at 15% 10%);
+        clip-path: circle(8% at 14% 9%);
         transition: all 1s ease-in-out;
         z-index: -1;
-        
-        
+
+        @include md-desktop{
+            clip-path: circle(8% at 14% 9%);
+            background-color: $green;
+        }
+        @include xl-mob(){
+            clip-path: circle(7% at 12% 8%);
+        }
+  
     &:hover{
             clip-path: circle(100% at -45% 10%);
+
+            @include md-desktop{
+                clip-path: circle(100% at -48% 8%);
+            }
+            @include md-tab{
+                clip-path: circle(100% at -50% 6%);
+            }
+            @include sm-tab(){
+                clip-path: circle(100% at -55% 5%);
+            }
+            @include xl-mob(){
+                clip-path: circle(100% at -58% 5%);
+            }
+            @include cs-708(){
+                clip-path: circle( 100% at -60% 5%);
+            }
+            @include lg-mob(){
+                clip-path: circle( 100% at -65% 2%);
+            }
         }
 
         .menu_icon{
@@ -29,8 +85,11 @@
             position: relative;
             height: 48px;
             width: 48px;
-            margin:  14px 24px;
+             margin:  8px 16px;
            
+            @include md-tab(){
+                margin: 0px;
+            }
             
             span{
                     background-color: $dark;
@@ -39,11 +98,24 @@
                     width: 48px;
                     padding: 2px;
                     background-color: aliceblue;
+
+                    @include md-desktop{
+                       padding: 2px;
+                       
+                     }
+
                 }
             @for $i from 1 to 4 {
                 span:nth-child(#{$i}){
                     top: percentage(23 * ($i - 1) / 100);
                      width: percentage(25 * $i / 100);
+
+                     @include md-desktop{
+                        top: percentage(22 * ($i - 1) / 100);
+                        width: percentage(23 * $i / 100);
+                        left: 3%;
+                      }
+ 
 
                 }
             }
@@ -56,6 +128,21 @@
             margin: 25px 0px;
             font-weight: bold;
 
+            @include md-desktop(){
+                margin: 15px 0px;
+                padding: 8px 0px;
+            }
+
+            @include xl-mob(){
+                margin: 12px 0px;
+            }
+            @include cs-708(){
+                margin:  11px 0px;
+                font-size: 15px;
+            }@include md-tab(){
+                margin: 9px -5px;
+
+            }
             img{
                 margin-right: 12px;
                 margin-bottom: -2px;
@@ -68,13 +155,36 @@
     height: 49vh;
 }
 
-.button{
+._button{
     font-size: 18px;
     border: 1px solid black;
     width: 120px;
     cursor: pointer;
     padding: 3px 2px;
     transition: all .5s ease-in-out;
+    z-index: 19999;
+
+    @include sm-tab(){
+        font-size: 16px;
+        width: 110px;
+    }
+   @media (max-width:516px) {
+        font-size: 14px;
+        padding: 4px 1px;
+}
+    @include md-mob(){
+        position: absolute;
+         font-size: 14px;
+         padding: 4px 1px;
+         margin-top: 20px;
+         width: 130px;
+
+    }
+    @media (max-width:400px) {
+        position: relative;
+        width: 150px;
+        display: block
+ }
 }
 
 .dark_btn{
@@ -90,6 +200,9 @@
 .light_btn{
     background-color: $secondwhite;
     color: $dark;
+    @include md-tab{
+        margin-left: 12px;
+     }
 
     &:hover{
         background-color: $dark;
@@ -100,11 +213,44 @@
 .margin30{
     margin: 30px 0px;
 }
+.x 
+{
+    img{
+
+        width: 500px;
+        
+}
+}
+
+@media (max-width: 1118px) { 
+    .x {
+        img{
+            width: 420px;
+        }
+    }
+    .nav_menu{
+        ul{
+            clip-path: circle(8% at 15% 10%);
+
+            .menu_icon{
+                margin: 11px 20px;
+            }
+        }
+    }
+}
+
+
+
+
 ///////////-----------------------L A N D I N G . J S--------------------////////////
 ///////////-----------------------L A N D I N G . J S--------------------////////////
 ///////////-----------------------L A N D I N G . J S--------------------////////////
 
-
+.title-row{
+    @include sm-tab(){
+        
+    }
+}
 .title{
     font-weight: bolder;
     letter-spacing: 4px;
@@ -112,6 +258,32 @@
     color: $dark;
     
 
+    @include md-tab(){
+        font-size: 29px;
+        margin-top: -50px;
+     }
+     @include sm-tab(){
+         font-size: 23px;
+         margin-top: 40px;
+     }
+     @include xl-mob(){
+         font-size: 21px;
+     }
+     @include cs-708(){
+         font-size: 27px;
+         margin-top: 60px;
+     }
+     @include lg-mob(){
+         font-size: 24px;
+     }
+     @include md-mob(){
+         font-size: 25px;
+         margin-left: 33.33334%;
+     }
+     @media (max-width:400px) {
+        margin-left: 16.66667%;
+        margin-top: 100px;
+ }
 
     span{
         color: $darkblue;
@@ -122,24 +294,107 @@
         font-family: 'Times New Roman', Times, serif;;
         font-weight: 300;
         margin-top: 20%;
+        @include md-desktop{
+            margin-top: 15% ;
+         }
+         @include md-tab(){
+            margin-top: 10%;
+         }
+         @include sm-tab(){
+             font-size: 16px;
+         }
+         @include cs-708(){
+             font-size: 18px;
+             margin: 10% 5% ;
+         }
+         @include md-mob(){
+             margin: 12% -2%;
+         }
     }
 }
 
 .model{
     height:400px;
     width: 550px;
+
+    @include sm-tab(){
+        height: 320px;
+        width: 280px;
+        margin: 15px 0px;
+    }
+
+    @include xl-mob(){
+        width: 290px;
+        height: 300px;
+    }
+    @include cs-708(){
+        display: none;
+    }
+ 
+
+}
+.sm-model{
+    display: none;
+
+    @include cs-708(){
+        display: inline-block;
+        position: absolute;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        right: 0% ;
+        top: 15%;
+        height: 250px;
+      
+        margin: 15px 0px;
+    }
+    @include md-mob(){
+       width: 350px !important;
+       top: 250px;
+    }
+    @media (max-width:400px) {
+       display: none;
+ }
+  
+    
 }
 
-    
+.button-row{
+    margin-top: 3px;
+
+    @include sm-tab(){
+        margin-top: -20px;
+    }
+    @include cs-708(){
+        margin-top: 29px;
+        margin-bottom: 29px;
+    }
+    @include md-mob(){
+        margin-left: 20px !important;
+    }
+
+
+   
+}
+.button-col{
+    display: flex;
+
+      @media (max-width:400px) {
+          display: block;
+      }
+}
 
 //////////------- F O O T E R . J S ---------------------/////////////
 //////////------- F O O T E R . J S ---------------------/////////////
 //////////------- F O O T E R . J S ---------------------/////////////
 .footer-row{
-    position: absolute;
-    bottom: -40px;
+    position: relative;
     left: 0px;
     width: 100%;
+    bottom: 0px;
+
+    @include md-mob(){
+        top: 25vh
+    }
 
 .footer{
     display: flex;
@@ -179,7 +434,9 @@
     
 }
 
-
+///////--------- A B O U T . J S -----------/////////////
+///////--------- A B O U T . J S -----------/////////////
+///////--------- A B O U T . J S -----------/////////////
 
 .about{
     line-height: 28px;
@@ -188,6 +445,19 @@
     color: $dark;
     font-family: poppy ;
     padding: 15px;
+
+    @include md-desktop(){
+        line-height: 26px;
+        
+    }
+    @include md-tab(){
+    line-height: 25px;
+    padding: 15px;
+     }
+
+     @include md-mob(){
+         margin-top: 55px;
+     }
 
     &::after{
         content: '';
@@ -198,6 +468,10 @@
         border-top: 3px solid $darkblue;
         height: 80px;
         width: 120px;
+        @include md-desktop(){
+            height: 75px;
+            width: 115px;
+        }
     }
     &::before{
         content: '';
@@ -208,6 +482,10 @@
         border-right: 3px solid $darkblue;
         height: 80px;
         width: 120px;
+        @include md-desktop(){
+            height: 75px;
+            width: 115px;
+        }
     }
 }
 
@@ -224,6 +502,10 @@
         border-top: 3px solid $yellow;
         height: 50px;
         width: 80px;
+        @include md-desktop(){
+            height: 45px;
+            width: 75px;
+        }
     }
     &::before{
         content: '';
@@ -234,9 +516,37 @@
         border-right: 3px solid $yellow;
         height: 50px;
         width: 80px;
+        @include md-desktop(){
+            height: 45px;
+            width: 75px;
+        }
     }
     
 
+}
+
+.skill-title{
+    position: relative;
+    @include md-tab(){
+        margin-top: 35px;
+    }
+    @include md-mob(){
+        margin-top: 80px;
+    }
+    @media (max-width:430px) {
+        margin-top:120px;
+ }
+
+ @include sm-mob(){
+     margin-top: 160px;
+ }
+}
+.skills{
+    @include md-tab(){
+        height: 120px;
+        margin-top: 20px;
+        
+    }
 }
 
 /////------- P R O J E C T . J S -----------////////
@@ -254,6 +564,11 @@
     box-shadow: 8px 20px 15px #5a5858;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
+
+    @include md-tab(){
+        margin: 8px 12px;
+        padding: 8px;
+    }
    
     &:hover{
         transform: scale(1.05);
@@ -305,20 +620,62 @@
     position: relative;
     width: 660px;
     background-color: $white;
-    height: 370px;
+    height: auto;
     border:1px solid $white;
     border-radius: 10px;
     box-shadow: 10px 15px 8px #5a5858;
     padding:26px;
+    margin: 0px auto;
+    @media (max-width:768px) {
+                padding: 5px 0px;
+    }
+    @include cs-708(){
+        width: 550px;
+       
+    }
+    @include lg-mob(){
+        width: 480px;
+    }
+    @include md-mob(){
+        width: 420px;
+    }
+    @media (max-width:430px) {
+        width: 390px;
+}
+    @include sm-mob(){
+        width: 340px;
 
+    }
+      
     .contact-details{
-        width: 300px;
+        width: auto;
         align-items: center;
         height: 300px;
+        z-index: 1999;
+        @media (max-width:768px) {
+                margin-right: 90px;
+        }
+        @include md-mob(){
+            flex: 0 0 91.666667%;
+        }
+        @media (max-width:430px) {
+           margin-right:20px;
+    }
     }
     .contact-data{
         height: 300px;
         align-items: center;
+        z-index: 1999;
+
+        @media (max-width:768px) {
+                margin-top: -70px;
+                margin-left: -70px;
+                width: 100px;
+        }
+        @media (max-width:430px) {
+            margin-left: 15px;
+
+     }
     }
     .contact-button{
       position: absolute;

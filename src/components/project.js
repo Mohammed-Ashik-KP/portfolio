@@ -3,7 +3,7 @@ const Project = (props) => {
     return ( 
         <React.Fragment>
                 <div className="row text-center">
-                <div className="box ">
+                <div className="box">
                     <div className="box-image d-flex justify-content-center">
                         <img src={props.image} alt={props.title} height="100px"/>
                     </div>

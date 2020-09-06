@@ -6,14 +6,14 @@ const Contact = () => {
             <div className="row d-flex offset-3 justify-content-start align-items-center mt-4">
                        <div className="content-title">Contact</div>
             </div>
-                <div className="contact-box offset-md-3 mt-4">
+                <div className="contact-box offset-xl-3 offset-lg-2 offset-md-1 d-flex justify-content-center mt-4">
                     <div className="row d-flex justify-content-center align-items-center">
-                        <div className="col contact-details">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-11 contact-details">
                         <form>
                             <div class="form-group margin30">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Id"/>
                             </div>
-                            <div class="form-group  margin30">
+                            <div class="form-group margin30">
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name"/>
                             </div>
                             <div class="form-group  margin30">

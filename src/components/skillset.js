@@ -27,6 +27,8 @@ const SkillSet = () => {
         slide:'img',
         centerMode:true,
         initialSlide:5,
+        autoplay:true,
+        autoplaySpeed:2000,
         responsive: [
             {
               breakpoint: 1024,
@@ -50,7 +52,7 @@ const SkillSet = () => {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                slidesPerRow:1,
+                slidesPerRow:2,
               }
             },
               {
@@ -58,7 +60,7 @@ const SkillSet = () => {
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  slidesPerRow:1,
+                  slidesPerRow:2,
                 }
             }
           ]
@@ -67,8 +69,8 @@ const SkillSet = () => {
     return ( 
         <React.Fragment>
             <div className="container">
-                <div className="row m-2 d-flex justify-content-center">
-                    <div className="content-title">
+                <div className="row m-2 d-flex justify-content-center ">
+                    <div className="content-title skill-title">
                             Skill Set
                     </div>
                 </div>
@@ -82,7 +84,7 @@ const SkillSet = () => {
                         <img src={js} alt="Javascript" height="60px"/>
                         <img src={react} alt="React JS" height="60px"/>
                         <img src={node} alt="Node JS" height="60px"/>
-                        <img src={express} alt="Express JS" height="60px"/>
+                        <img src={express} alt="Express JS" height="50px"/>
                         <img src={git} alt="GitHub" height="60px"/>
                         <img src={python} alt="Python" height="60px"/>
                         <img src={sass} alt="Sass" height="60px"/>
