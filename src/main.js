@@ -8,13 +8,16 @@ import { Route, BrowserRouter ,Switch } from 'react-router-dom';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
+import MenuProvider from './components/context';
 const Main = () => {
     return ( 
         <React.Fragment>
               
               
                 <BrowserRouter>
+                <MenuProvider>
                     <Nav/>
+                </MenuProvider>
                       <Switch>
                           <Route path="/" exact component={Landing}></Route>
                           <Route path="/about" exact component={About}></Route>

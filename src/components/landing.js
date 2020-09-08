@@ -1,7 +1,6 @@
 import React from 'react';
 import '../index.css';
 import ashiq from '../assets/ashiq-high.png';
-import ashiqround from '../assets/ashiq-round.png';
 const Landing = () => {
     return ( 
         <React.Fragment>
