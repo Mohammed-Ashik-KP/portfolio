@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "430d36a4bacd27472c9195b98a176da7",
+    "revision": "4b175b12b4f374a4320e5aac769ad6da",
     "url": "/Aashiq-Otp.github.io/index.html"
   },
   {
-    "revision": "cfe16ee0f0f6161d49af",
+    "revision": "b7be057fe76f8e09d3f2",
     "url": "/Aashiq-Otp.github.io/static/css/2.ff484ca2.chunk.css"
   },
   {
-    "revision": "83cb3eee092f98d51f32",
-    "url": "/Aashiq-Otp.github.io/static/css/main.1e47f921.chunk.css"
+    "revision": "21b34e1b4a3787455299",
+    "url": "/Aashiq-Otp.github.io/static/css/main.7f983593.chunk.css"
   },
   {
-    "revision": "cfe16ee0f0f6161d49af",
-    "url": "/Aashiq-Otp.github.io/static/js/2.d289f59c.chunk.js"
+    "revision": "b7be057fe76f8e09d3f2",
+    "url": "/Aashiq-Otp.github.io/static/js/2.21248102.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Aashiq-Otp.github.io/static/js/2.d289f59c.chunk.js.LICENSE.txt"
+    "url": "/Aashiq-Otp.github.io/static/js/2.21248102.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83cb3eee092f98d51f32",
-    "url": "/Aashiq-Otp.github.io/static/js/main.d011784c.chunk.js"
+    "revision": "21b34e1b4a3787455299",
+    "url": "/Aashiq-Otp.github.io/static/js/main.fe245336.chunk.js"
   },
   {
     "revision": "d8c7d9933d4913ffe836",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "675e21e33ef96a7da2ebdc9a332ba24a",
     "url": "/Aashiq-Otp.github.io/static/media/ashiq-high.675e21e3.png"
-  },
-  {
-    "revision": "df7de82020c4cd651ab494e3ed1215ae",
-    "url": "/Aashiq-Otp.github.io/static/media/ashiq-round.df7de820.png"
   },
   {
     "revision": "2c270c2c1cf2b8004a20122a265564ca",

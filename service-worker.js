@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Aashiq-Otp.github.io/precache-manifest.91f3037602fb68be6b4abdf775d6a772.js"
+  "/Aashiq-Otp.github.io/precache-manifest.34ed68d11ff6b7b28c920f3f57a4c8ba.js"
 );
 
 self.addEventListener('message', (event) => {
