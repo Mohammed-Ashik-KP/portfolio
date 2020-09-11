@@ -37,12 +37,12 @@ const Nav = (props) => {
                         <span className={open?'bar':''}></span>
                         <span className={open?'bar':''}></span>
             
-            <div className={open ? 'nav-group-sm' : '.nav-group-sm-hidden'}>
+            <div className={open ? 'nav-group-sm' : 'nav-group-sm-hidden'}>
                 {open? (<ul>
-                    <li className={menu === "home" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("home")}}><Link to="/" style={{"textDecoration":"none","color":"inherit"}}><img src={home} alt=""/>Home</Link></li>
-                    <li className={menu === "about" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("about")}}><Link to="/about" style={{"textDecoration":"none","color":"inherit"}}><img src={about} alt=""/>About</Link></li>
-                    <li className={menu === "portfolio" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("portfolio")}}><Link to="/portfolio" style={{"textDecoration":"none","color":"inherit"}}><img src={portfolio} alt=""/>Portfolio</Link></li>
-                    <li className={menu === "contact" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("contact")}}><Link to="/contact" style={{"textDecoration":"none","color":"inherit"}}><img src={contact} alt=""/>Contact</Link></li>
+                    <li className={menu === "home" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("home")}}><Link to="/" style={{"textDecoration":"none","color":"inherit"}}><img src={home} alt="" className="mr-2"/>Home</Link></li>
+                    <li className={menu === "about" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("about")}}><Link to="/about" style={{"textDecoration":"none","color":"inherit"}}><img src={about} alt=""    className="mr-2"/>About</Link></li>
+                    <li className={menu === "portfolio" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("portfolio")}}><Link to="/portfolio" style={{"textDecoration":"none","color":"inherit"}}><img src={portfolio} alt=""   className="mr-2"/>Portfolio</Link></li>
+                    <li className={menu === "contact" ? 'nav-items selected': 'nav-items'}  onClick={ ()=>{setMenu("contact")}}><Link to="/contact" style={{"textDecoration":"none","color":"inherit"}}><img src={contact} alt=""  className="mr-2"/>Contact</Link></li>
                 </ul>):''} 
             </div>
             </div>

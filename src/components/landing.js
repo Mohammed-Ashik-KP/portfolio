@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import ashiq from '../assets/ashiq-high.png';
+import { Link } from 'react-router-dom';
 const Landing = () => {
     return ( 
         <React.Fragment>
@@ -20,8 +21,11 @@ const Landing = () => {
 
             <div className="row button-row offset-xl-3 offset-md-2 offset-sm-1 d-flex justify-content-start">
                 <div className="col-5 button-col justify-content-around">
-                <div className="_button light_btn text-center">Know More</div>
-                <div className="_button light_btn text-center">Contact</div>
+                <div className="_button light_btn text-center"><Link to="/contact">Contact</Link></div>
+                <div className="_button light_btn text-center">
+                    <a href="https://drive.google.com/file/d/1c8WH9b-5BKSamugUwJuzuyFq3VE_RLZ3/view?usp=sharing">
+                    View Resume
+                    </a></div>
                 </div>
             </div>
             </div>
