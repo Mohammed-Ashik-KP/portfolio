@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Aashiq-Otp.github.io/static/css/main.7f983593.chunk.css",
-    "main.js": "/Aashiq-Otp.github.io/static/js/main.fe245336.chunk.js",
-    "main.js.map": "/Aashiq-Otp.github.io/static/js/main.fe245336.chunk.js.map",
+    "main.css": "/Aashiq-Otp.github.io/static/css/main.35a5450d.chunk.css",
+    "main.js": "/Aashiq-Otp.github.io/static/js/main.d5e1e4a7.chunk.js",
+    "main.js.map": "/Aashiq-Otp.github.io/static/js/main.d5e1e4a7.chunk.js.map",
     "runtime-main.js": "/Aashiq-Otp.github.io/static/js/runtime-main.9a55e86a.js",
     "runtime-main.js.map": "/Aashiq-Otp.github.io/static/js/runtime-main.9a55e86a.js.map",
     "static/css/2.ff484ca2.chunk.css": "/Aashiq-Otp.github.io/static/css/2.ff484ca2.chunk.css",
-    "static/js/2.21248102.chunk.js": "/Aashiq-Otp.github.io/static/js/2.21248102.chunk.js",
-    "static/js/2.21248102.chunk.js.map": "/Aashiq-Otp.github.io/static/js/2.21248102.chunk.js.map",
+    "static/js/2.1fe786d6.chunk.js": "/Aashiq-Otp.github.io/static/js/2.1fe786d6.chunk.js",
+    "static/js/2.1fe786d6.chunk.js.map": "/Aashiq-Otp.github.io/static/js/2.1fe786d6.chunk.js.map",
     "index.html": "/Aashiq-Otp.github.io/index.html",
-    "precache-manifest.34ed68d11ff6b7b28c920f3f57a4c8ba.js": "/Aashiq-Otp.github.io/precache-manifest.34ed68d11ff6b7b28c920f3f57a4c8ba.js",
+    "precache-manifest.79ee913a8a211ab745b94149bc3a0954.js": "/Aashiq-Otp.github.io/precache-manifest.79ee913a8a211ab745b94149bc3a0954.js",
     "service-worker.js": "/Aashiq-Otp.github.io/service-worker.js",
     "static/css/2.ff484ca2.chunk.css.map": "/Aashiq-Otp.github.io/static/css/2.ff484ca2.chunk.css.map",
-    "static/css/main.7f983593.chunk.css.map": "/Aashiq-Otp.github.io/static/css/main.7f983593.chunk.css.map",
-    "static/js/2.21248102.chunk.js.LICENSE.txt": "/Aashiq-Otp.github.io/static/js/2.21248102.chunk.js.LICENSE.txt",
+    "static/css/main.35a5450d.chunk.css.map": "/Aashiq-Otp.github.io/static/css/main.35a5450d.chunk.css.map",
+    "static/js/2.1fe786d6.chunk.js.LICENSE.txt": "/Aashiq-Otp.github.io/static/js/2.1fe786d6.chunk.js.LICENSE.txt",
     "static/media/BCA.jpg": "/Aashiq-Otp.github.io/static/media/BCA.dfba0e27.jpg",
     "static/media/about.svg": "/Aashiq-Otp.github.io/static/media/about.beb9baa2.svg",
     "static/media/ashiq-high.png": "/Aashiq-Otp.github.io/static/media/ashiq-high.675e21e3.png",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.9a55e86a.js",
     "static/css/2.ff484ca2.chunk.css",
-    "static/js/2.21248102.chunk.js",
-    "static/css/main.7f983593.chunk.css",
-    "static/js/main.fe245336.chunk.js"
+    "static/js/2.1fe786d6.chunk.js",
+    "static/css/main.35a5450d.chunk.css",
+    "static/js/main.d5e1e4a7.chunk.js"
   ]
 }
